@@ -1,0 +1,98 @@
+@media screen and (max-width: 1160px) {
+    
+    .header {
+
+        &__menu {
+            display: none;
+        }
+
+        &-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100px;
+
+            &-left-part{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    /* Кнопка выпадающего списка */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+
+        &__button {
+            background-image: url(../images/header/mobile-menu.png);
+            width: 56px;
+            height: 36px;
+            margin: 0px 44px 0px 54px;
+            border: none;
+        }
+
+        &__content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            margin: 0px 40px;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        &:hover &__content {
+            display: block;
+        }
+
+        &__link {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+
+            &:hover {
+                background-color: #ddd;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header__logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .header__logo {
+        display: block;
+    }
+    
+    .header__btn {
+        margin: 2px 14px 2px 0px;
+        
+    }
+
+    .header__buttons {
+        text-align: right;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .header__logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 354px) {
+    .dropdown__button {
+        margin: 0px 23px 0px 23px;        
+    }
+
+    .dropdown__content {
+        margin: 0px 23px;
+    }
+}

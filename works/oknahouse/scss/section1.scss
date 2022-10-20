@@ -1,0 +1,206 @@
+.section-background {
+    background-image: url("../images/section1/background_purple.png");
+    background-size: cover;
+}
+
+.container__main-section {
+    max-width: 1200px;
+    height: 593px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.main {
+
+    &-markup {
+
+        &__right-part {
+            position: relative;
+            margin: auto auto auto 38px;
+        }
+
+        &__title {
+            max-width: 550px;
+            height: 256px;
+            padding: 130px 0px 0px 76px;
+        }
+
+        &__plates-row {
+            max-width: 505px;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0px 0px 60px;
+        }
+
+        &__descriptions-row {
+            max-width: 580px;
+            display: flex;
+            margin: 10px 0px 0px 77px;
+        }
+    }
+
+    &__firmname {
+        color: #EF7F04;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    &__firmname-description {
+        color: #ffffff;
+        font-family: 'Roboto';
+        font-weight: 100;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    &__description {
+        color: #ffffff;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+
+        &_string1 {
+            margin-right: 42px;
+            width: 170px;
+        }
+
+        &_string2 {
+            margin-right: 40px;
+            width: 164px;
+        }
+
+        &_string3 {
+            width: 155px;
+        }
+    }
+}
+
+.order-form {
+
+    &-markup {
+        &__body {
+            width: 406px;
+            height: 450px;
+            background-color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        &__checkbox {
+            margin-bottom: 24px;
+            padding-left: 30px;
+        }
+
+        &__input-fields {
+            margin-top: 40px;
+        }
+
+        &__input-field {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__title {
+        padding-top: 46px;
+        text-align: center;
+        color: #2F2F51;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    &__checkbox-description {
+        // параметры текста в чек-боксе
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__input-field {
+        width: 326px;
+        height: 40px;
+        background-color: #E2E2E2;
+        border: none;
+        border-radius: 3px;
+        padding-left: 18px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            background-color: #E2E2E2;
+            height: 40px;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #424268;
+        }
+    }
+
+    &__button {
+        margin: 0 auto;
+        height: 58px;
+        width: 200px;
+        border: 0;
+        border-radius: 3px;
+        background-color: #EF7F04;
+        color: #FFFFFF;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        display: block;
+    }
+
+    &__measure-tape {
+        position: absolute;
+        top: 368px;
+        left: -86px;
+    }
+}
+
+.custom-checkbox {
+
+    //Убираем чекбокс
+    &>input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+
+        /* стиль для чекбокса, находящегося в состоянии checked */
+        &:checked+span::before {
+            background-image: url("../images/section1/custom_checkbox.svg");
+        }
+    }
+
+    /* для элемента label, связанного с .custom-checkbox */
+    &>span {
+        user-select: none;
+        display: inline-block;
+    
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 8px;
+            background-color: #E2E2E2;
+            background-repeat: no-repeat;
+            background-position: 3px -5px;
+            vertical-align: middle;
+        }
+    }
+}

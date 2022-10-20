@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аттестация</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+    <div class="container">
+        &nbsp;
+        <form class="form__body form_login">
+            <input class="form__button-mode button_to-reg" type="button" value="Зарегистрироваться">
+            <h2 class="form__title">Вход</h2>
+
+            <div class="form__input-email interactive-field">
+                <p class="form__input-email interactive-field__title">Email</p>
+                <p class="form__input-email interactive-field__ast">*</p>
+                <input class="form__input-email interactive-field__body" type="text" placeholder="johndoe@email.com"> 
+                <p class="form__input-email interactive-field__message">Поле обязательно для заполнения</p>
+            </div>
+
+            <div class="form__input-password interactive-field">
+                <p class="form__input-password interactive-field__title">Пароль</p>
+                <p class="form__input-password interactive-field__ast">*</p> 
+                <input class="form__input-password interactive-field__body" type="password" placeholder="Введите пароль"> 
+                <p class="form__input-password interactive-field__message">Поле обязательно для заполнения</p>
+            </div>
+
+            <div class="form__checkbox checkbox">
+                <div class="checkbox-row">
+                    <input class="checkbox__mark" type="checkbox">
+                    <span class="checkbox__value">Я согласен получать обновления на почту</span>
+                </div>
+                <p class="checkbox__ast">*</p> 
+                <p class="checkbox__message">Поле обязательно для заполнения</p>
+            </div>
+
+            <input class="form__button-submit" type="button" value="Войти">
+        </form>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

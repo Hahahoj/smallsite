@@ -1,0 +1,192 @@
+@charset "UTF-8";
+.section-background {
+  background-image: url("../images/section1/background_purple.png");
+  background-size: cover;
+}
+
+.container__main-section {
+  max-width: 1200px;
+  height: 593px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-markup__right-part {
+  position: relative;
+  margin: auto auto auto 38px;
+}
+.main-markup__title {
+  max-width: 550px;
+  height: 256px;
+  padding: 130px 0px 0px 76px;
+}
+.main-markup__plates-row {
+  max-width: 505px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px 0px 60px;
+}
+.main-markup__descriptions-row {
+  max-width: 580px;
+  display: flex;
+  margin: 10px 0px 0px 77px;
+}
+.main__firmname {
+  color: #EF7F04;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.main__firmname-description {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 42px;
+}
+.main__description {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.main__description_string1 {
+  margin-right: 42px;
+  width: 170px;
+}
+.main__description_string2 {
+  margin-right: 40px;
+  width: 164px;
+}
+.main__description_string3 {
+  width: 155px;
+}
+
+.order-form-markup__body {
+  width: 406px;
+  height: 450px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.order-form-markup__checkbox {
+  margin-bottom: 24px;
+  padding-left: 30px;
+}
+.order-form-markup__input-fields {
+  margin-top: 40px;
+}
+.order-form-markup__input-field {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.order-form__title {
+  padding-top: 46px;
+  text-align: center;
+  color: #2F2F51;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+.order-form__checkbox-description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.order-form__input-field {
+  width: 326px;
+  height: 40px;
+  background-color: #E2E2E2;
+  border: none;
+  border-radius: 3px;
+  padding-left: 18px;
+}
+.order-form__input-field:focus {
+  outline: none;
+}
+.order-form__input-field::-moz-placeholder {
+  background-color: #E2E2E2;
+  height: 40px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #424268;
+}
+.order-form__input-field:-ms-input-placeholder {
+  background-color: #E2E2E2;
+  height: 40px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #424268;
+}
+.order-form__input-field::placeholder {
+  background-color: #E2E2E2;
+  height: 40px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #424268;
+}
+.order-form__button {
+  margin: 0 auto;
+  height: 58px;
+  width: 200px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #EF7F04;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+}
+.order-form__measure-tape {
+  position: absolute;
+  top: 368px;
+  left: -86px;
+}
+
+.custom-checkbox {
+  /* для элемента label, связанного с .custom-checkbox */
+}
+.custom-checkbox > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  /* стиль для чекбокса, находящегося в состоянии checked */
+}
+.custom-checkbox > input:checked + span::before {
+  background-image: url("../images/section1/custom_checkbox.svg");
+}
+.custom-checkbox > span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+}
+.custom-checkbox > span::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 8px;
+  background-color: #E2E2E2;
+  background-repeat: no-repeat;
+  background-position: 3px -5px;
+  vertical-align: middle;
+}/*# sourceMappingURL=section1.css.map */
