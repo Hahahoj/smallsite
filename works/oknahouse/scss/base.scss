@@ -1,0 +1,57 @@
+
+// По умолчанию используется лого для светлой темы
+.logo {
+    background: url("../images/base/logo_black.svg");
+    background-size:cover;
+} 
+
+// формат имени: класс_модификатор_значение
+.logo_theme_dark {
+    background: url("../images/base/logo_white.svg");
+}
+
+.logo_theme_white {
+    background: url("../images/base/logo_black.svg");
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.container {
+    max-width: 1210px;
+    margin:0 auto;
+    font-family:  'Roboto', sans-serif;
+    color: #000;
+}
+
+.title-section {
+    height: 125px;
+    padding: 48px;
+    text-align: center;
+    font-style: 'Roboto';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color:#2F2F51;    
+} 
+
+.block-empty_height {
+    &_space-m {
+        height: 16px;
+    }
+
+    &_space-xxl {
+        height: 32px;
+    }
+
+    &_space-xl {
+        height: 52px;
+        display:block;
+    }
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+}

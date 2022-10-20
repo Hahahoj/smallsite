@@ -1,0 +1,19 @@
+@media screen and (max-width: 816px) {
+    .footer-row {
+        flex-direction: column;
+        justify-content: center;
+    }
+} 
+
+@media screen and (max-width: 470px) {
+    .footer-right-part {
+        display: flex;
+        flex-direction: column;
+        width: 205px;
+    }
+
+    .footer__title {
+        font-size: 14px;
+    }
+}
+

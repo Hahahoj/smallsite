@@ -1,0 +1,21 @@
+@media screen and (max-width: 1230px) {
+    .table-plates {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .table-plate__icon {
+        padding: 50px 0px 0px 20px;
+    }
+
+    .table-plate__title {
+        padding: 46px 0px 0px 0px;
+        font-size: 23px;
+    }
+
+    .table-plate__description {
+        margin: 32px 5% 0px 5%;
+    }
+}

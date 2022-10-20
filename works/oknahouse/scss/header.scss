@@ -1,0 +1,80 @@
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.header {
+    background-color: #FFFFFF;
+
+    &__logo {
+        width:90px;
+        height:63px;
+        // выравниваем иконку из-за относительности её центра
+        transform: translate(0,-3%);
+    }
+
+    &__menu {
+        width: 650px;
+    }
+    
+    &__btn {
+        border: none;
+        background: #EF7F04;
+        width: 170px;
+        height: 40px;
+        margin: 0px 14px 0px 0px;
+        color: white;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:hover { 
+            background: #3B3A63;
+        }
+
+        &_purple {
+            background: #3B3A63;
+        
+            &:hover {
+                background:#EF7F04;
+            }
+        }
+
+        &-icon {
+            margin: 0px 6px 0px 0px;
+            vertical-align: middle;
+        }
+    }    
+}
+
+//такого рода менюшку в итоге можем реиспользовать как стандартный блок кода
+.menu {
+
+    &__list {
+        display:flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &__link {   
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    
+        &:hover {
+            color: #EF7F04;
+            text-decoration: underline;
+            text-decoration-thickness: 4px;
+            text-underline-offset:-58px;
+        }
+    }
+} 
+
+.dropdown {
+    display: none;
+}
+

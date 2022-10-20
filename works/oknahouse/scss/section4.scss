@@ -1,0 +1,19 @@
+.portfolio-inner {
+    height: 410px;
+    background:white;
+    border-radius:3px;
+}        
+
+.gallery-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.photo__img {
+    border-radius:3px;
+
+    &:hover{
+        box-shadow: 0 0 7px gray;
+    }
+}

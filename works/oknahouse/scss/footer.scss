@@ -1,0 +1,53 @@
+.footer {
+    background-color: #2F2F51;
+
+    &__logo {
+        width:54.17px;
+        height:38.7px;
+        // выравниваем иконку из-за относительности её центра
+        transform: translate(0,-10%);
+        margin: 0px 22px 0px 0px;
+    }
+    
+    &__title {
+        color: #FFFFFF;
+        font-family: 'Roboto';
+    }
+    
+    &__link {
+        color: #FFFFFF;
+        font-family: 'Roboto';
+        font-size: 14px;
+        line-height: 36px;
+        width:232px;
+        white-space: nowrap;
+    }   
+}
+
+//Разметка
+.footer {
+    &-inner {
+        height: 146px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &-row {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-left-part {
+        display: flex;
+        align-items: center;
+    }
+
+    &-right-part {
+        width: 464px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,66 @@
+
+.table-plates {
+    display:flex;
+    flex-wrap: wrap; 
+}
+
+.table-plate {
+    margin: 5px;
+    height: 268px;
+    max-width: 595px;
+    display: flex;
+    flex-wrap: wrap;        
+    border-radius: 3px;
+
+    &:hover {
+        box-shadow: 0 0 7px gray;
+    }
+
+    &__icon {
+        width:118px;
+        height: 122px;
+        padding: 50px 0px 0px 50px;
+    }
+
+    &__title {
+        width: 55%;
+        height: 122px;
+        padding: 60px 0px 0px 20px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2F2F51;
+    }
+
+    &__description {
+        height: 125px;
+        margin: 32px 40% 0px 50px;
+        padding-top: -20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #2F2F51;
+    }
+
+    &_picture1 {
+        background-image: linear-gradient(90.45deg, rgba(255,  255, 255, 100%) 47%, rgba(255, 255, 255, 0%) 98.81%), url(
+                "../images/section2/plate1_bg.png");
+    }
+
+    &_picture2 {
+        background-image: linear-gradient(90.45deg, rgba(255, 255, 255, 100%) 47%, rgba(255, 255, 255, 0%) 98.81%), url(
+                "../images/section2/plate2_bg.png");
+    }
+
+    &_picture3 {
+        background-image: linear-gradient(90.45deg, rgba(255, 255, 255, 100%) 47%, rgba(255, 255, 255, 0%) 98.81%), url(
+                "../images/section2/plate3_bg.png");
+    }
+
+    &_picture4 {
+        background-image: linear-gradient(90.45deg, rgba(255, 255, 255, 100%) 47%, rgba(255, 255, 255, 0%) 98.81%), url(
+                "../images/section2/plate4_bg.png");
+    }
+}
+
