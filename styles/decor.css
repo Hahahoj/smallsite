@@ -1,0 +1,21 @@
+.decor {
+  position: relative;
+}
+.decor__icons {
+  position: absolute;
+  top: 86px;
+  left: 30px;
+  width: 1190px;
+  height: 1398px;
+  background-image: url(../images/decor/icons.svg);
+  z-index: -3;
+}
+.decor__my-photo {
+  position: absolute;
+  top: 0px;
+  left: 350px;
+  width: 650px;
+  height: 783px;
+  background-image: url(../images/decor/i-photo-final.png);
+  z-index: -2;
+}/*# sourceMappingURL=decor.css.map */

@@ -1,0 +1,96 @@
+.bottom-background {
+  margin-top: 1262px;
+  height: 616px;
+  background: linear-gradient(168deg, rgba(10, 184, 79, 0.89) 26.35%, rgba(52, 179, 8, 0.726817) 33.44%, rgba(52, 179, 8, 0.726817) 41.85%, rgba(45, 167, 2, 0) 73.1%);
+}
+
+.seagrass-background {
+  margin-top: -949px;
+  background: url(../images/review/bottom.png);
+  height: 358px;
+}
+
+.review-block__title {
+  margin: 24px 0 70px 0;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #AC3B3B;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.43);
+}
+.review-block__subtitle {
+  margin-top: -22px;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.06em;
+  color: #1A2691;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.43);
+}
+
+.review__name {
+  padding: 10px;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+.review__photo {
+  display: flex;
+  justify-self: center;
+  padding-left: 5px;
+  width: 187px;
+  height: 209px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.review__photo_1 {
+  background: url(../images/review/photo1.png);
+}
+.review__photo_2 {
+  background: url(../images/review/photo2.png);
+}
+.review__photo_3 {
+  background: url(../images/review/photo3.png);
+}
+.review__photo_4 {
+  background: url(../images/review/photo4.png);
+}
+.review__description {
+  padding: 0px 20px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+.review__score {
+  position: absolute;
+  bottom: 20px;
+  width: 78px;
+  height: 16px;
+  background: url(../images/review/starz5.png);
+}
+.review-card {
+  position: relative;
+  width: 268px;
+  height: 420px;
+  background: rgba(217, 217, 217, 0.3);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review-rows {
+  display: flex;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=review.css.map */

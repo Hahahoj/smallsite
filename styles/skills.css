@@ -1,0 +1,62 @@
+.skills {
+  position: relative;
+}
+
+.skills-sphere {
+  position: absolute;
+  right: -200px;
+  top: -40px;
+  width: 689px;
+  height: 689px;
+  background: linear-gradient(180deg, #9DFA73 30.6%, rgba(157, 250, 115, 0.684964) 45.7%, rgba(157, 250, 115, 0.401965) 59.49%, rgba(157, 250, 115, 0) 100%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.text-block__subtitle {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.58em;
+  color: #AC3B3B;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.43);
+}
+.text-block__title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AC3B3B;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.43);
+}
+.text-block__description {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.44em;
+  text-transform: uppercase;
+  color: #020309;
+  opacity: 0.4;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9);
+}
+.text-block-markup {
+  display: block;
+  width: 385px;
+  margin-top: 30px;
+  position: absolute;
+  right: 0;
+}
+
+.skill__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=skills.css.map */

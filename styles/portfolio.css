@@ -1,0 +1,107 @@
+.portfolio-sphere {
+  margin: -305px 0 0 450px;
+  width: 1159px;
+  height: 1159px;
+  left: 460px;
+  top: 1975px;
+  background: linear-gradient(180deg, #9DFA73 30.6%, rgba(157, 250, 115, 0.684964) 45.7%, rgba(157, 250, 115, 0.401965) 59.49%, rgba(157, 250, 115, 0) 100%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.portfolio-block__title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: 0.015em;
+  color: #AC3B3B;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.43);
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+.portfolio-block__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.06em;
+  color: #1A2691;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.43);
+  display: flex;
+  justify-content: center;
+}
+.portfolio-block__description {
+  display: flex;
+  justify-content: center;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  color: rgba(15, 14, 14, 0.59);
+}
+.portfolio-block__description_decor {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 160%;
+  letter-spacing: 0.2em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #22A6DC;
+}
+.portfolio-block-markup {
+  margin: -1090px 0 0 750px;
+  width: 500px;
+}
+
+.slain2 {
+  width: 808px;
+  height: 675px;
+  background: url(../images/portfolio/slain2.png);
+  margin-top: 400px;
+}
+
+.cotovasia {
+  width: 300px;
+  height: 256px;
+  background: url(../images/portfolio/cotovasia.png);
+  margin-top: -128px;
+  margin-left: 300px;
+}
+
+.dredd1 {
+  width: 794px;
+  height: 482px;
+  background: url(../images/portfolio/dredd1.png);
+  margin-top: -550px;
+  margin-left: 486px;
+}
+
+.dredd2 {
+  width: 1244px;
+  height: 887px;
+  background: url(../images/portfolio/dredd2.png);
+  margin-top: -1278px;
+  margin-left: 34px;
+}
+
+.slain1 {
+  width: 419px;
+  height: 378px;
+  background: url(../images/portfolio/slain1.png);
+  margin-top: -294px;
+  margin-left: 460px;
+}
+
+.conversion {
+  width: 198px;
+  height: 183px;
+  background: url(../images/portfolio/conversion.png);
+  margin-top: -840px;
+  margin-left: 1068px;
+}/*# sourceMappingURL=portfolio.css.map */

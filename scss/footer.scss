@@ -1,0 +1,37 @@
+.footer {
+    &__firmname {
+        width: 378px;
+        text-align: end;
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+
+    &__email {
+        width: 542px;
+        background: url(../images/footer/mailru.svg);
+        height: 84px;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    &__telegram {
+        margin-right: 10px;
+        width: 94px;
+        background: url(../images/footer/telegram.svg);
+        height: 84px;
+        background-repeat: no-repeat;
+        background-position: right;
+        flex-shrink: 0;
+    }
+
+
+    &-row {
+        height: 250px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+}

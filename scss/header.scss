@@ -1,0 +1,28 @@
+.menu {
+
+    &__logo {
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/header/profile-item.svg);
+        background-image: cover;
+    }
+
+    &__item {
+        color: whitesmoke;
+    }
+
+    &-row {
+        margin: 0px 0px 0px 650px;
+        height: 104px;
+        padding: 30px auto;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        font-size: 18px;
+    }
+}
+
+
+
+
+

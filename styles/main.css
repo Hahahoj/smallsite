@@ -1,0 +1,59 @@
+.sphere-decor {
+  position: absolute;
+  left: -146px;
+  top: -425px;
+  width: 1058px;
+  height: 1058px;
+  background: linear-gradient(208.9deg, #FABC73 37.14%, #FAED73 62.53%, rgba(84, 167, 168, 0) 90.97%);
+  border-radius: 50%;
+  z-index: -10;
+}
+
+.main__title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: 0.015em;
+  color: #AC3B3B;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.43);
+}
+.main__subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.25em;
+  color: #1A2691;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.43);
+}
+.main__description {
+  padding: 0px 50px;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: rgba(15, 14, 14, 0.59);
+}
+.main__button {
+  padding: 0 10px;
+  position: absolute;
+  left: 1040px;
+  top: 170px;
+  width: 172px;
+  height: 49px;
+  background: #FFAE30;
+  box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.main__markup-textblock {
+  position: relative;
+  width: 760px;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
