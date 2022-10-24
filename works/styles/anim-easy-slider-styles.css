@@ -30,12 +30,14 @@ body {
 }
 
 .section {
-  display: block;
+  display: flex;
   position: absolute;
+  align-items: center;
   font-size: 32px;
   font-weight: 100;
   text-align: center;
-  line-height: 720px;
+  justify-content: center;
+  height: 100%;
   transition: opacity 1s;
 }
 

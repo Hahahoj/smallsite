@@ -3,6 +3,7 @@
 
 let buttonPrev = document.querySelector(".button__prev");
 let buttonNext = document.querySelector(".button__next");
+console.log(buttonNext);
 
 let buttonThemePrev = document.querySelector(".button__theme_prev");
 let buttonThemeNext = document.querySelector(".button__theme_next");
@@ -12,11 +13,14 @@ let theme_max = 3;
 
 
 let pages = document.querySelectorAll(".section.theme0"+theme);
+console.log(pages);
 let i = 0;
 
 buttonNext.onclick = function() {
+    console.log("press");
     let str = pages[i].className;
     pages[i++].className = str.replace(" showed", "");
+    console.log(pages);
     if (i >= pages.length) {
         theme = theme+1;
         if (theme>theme_max) {
