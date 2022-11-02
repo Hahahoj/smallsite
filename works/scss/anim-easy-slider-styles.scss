@@ -37,9 +37,85 @@ body {
     align-items: center;
 }
 
+.button-decor{
+    border-top: 2px solid grey;
+    width: 70px;
+    height: 30px;
+    background: red;
+}
+
+.start-button {
+    margin: 33px 0 0 5px;
+    width:100px;
+    height: 100px;
+    background: #151515;
+    color:aliceblue;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    font-family: Enthalpy298;
+    letter-spacing: 3px;
+    font-size: 24px;
+}
+
+.start-button:active {
+    animation: clicked .2s;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: clicked;
+}
+
+@keyframes clicked {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        // background: transparent;
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .button {
-    width: 200px;
+    width: 50px;
+    height: 50px;
+    border-bottom-left-radius: 50%; 
+    border-bottom-right-radius: 50%;
     margin: 10px 10px;
+    background: #151515;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.button:active {
+    animation: clicked2 .2s;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: clicked2;
+}
+
+@keyframes clicked2 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: translate(0px, 28px) scale(1,1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .section {
@@ -72,8 +148,8 @@ body {
     border-top-right-radius: 50%;
     background-color: #151515;
     text-align: left;
-
-    background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/pizzaville/present.jpg");
+    letter-spacing: 1px;
+    background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/pizzaville/present_f.jpg");
     background-size:contain;
     background-repeat: no-repeat;
 }
@@ -101,7 +177,7 @@ a {
 
 .tech {
     padding: 40px;
-    padding-top: 280px;
+    padding-top: 250px;
 }
 
 h1 {
