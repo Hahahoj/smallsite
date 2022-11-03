@@ -45,16 +45,30 @@ body {
 }
 
 .start-button {
+    display: block;
     margin: 33px 0 0 5px;
-    width:100px;
+    width: 100px;
     height: 100px;
     background: #151515;
     color:aliceblue;
+    cursor: pointer;
     border-radius: 50%;
     transform: rotate(45deg);
     font-family: Enthalpy298;
     letter-spacing: 3px;
     font-size: 24px;
+}
+
+.start-button:hover {
+    animation: clicked .2s;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: clicked_h;
 }
 
 .start-button:active {
@@ -70,15 +84,14 @@ body {
 }
 
 @keyframes clicked {
-    0% {
-        transform: scale(1);
-    }
     50% {
-        // background: transparent;
         transform: scale(2);
     }
-    100% {
-        transform: scale(1);
+}
+
+@keyframes clicked_h {
+    50% {
+        transform: rotate(45deg) scale(1.1);
     }
 }
 
@@ -94,6 +107,18 @@ body {
     font-size: 24px;
 }
 
+.button:hover {
+    animation: clicked2 .2s;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: clicked2_h;
+}
+
 .button:active {
     animation: clicked2 .2s;
     animation-duration: 0.2s;
@@ -106,15 +131,15 @@ body {
     animation-name: clicked2;
 }
 
-@keyframes clicked2 {
-    0% {
-        transform: scale(1);
+@keyframes clicked2_h {
+    50% {
+        transform: translate(0px, 3px) scale(1,1.1);
     }
+}
+
+@keyframes clicked2 {
     50% {
         transform: translate(0px, 28px) scale(1,1.5);
-    }
-    100% {
-        transform: scale(1);
     }
 }
 

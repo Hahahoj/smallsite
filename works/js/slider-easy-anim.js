@@ -8,6 +8,9 @@ console.log(buttonNext);
 let buttonThemePrev = document.querySelector(".button__theme_prev");
 let buttonThemeNext = document.querySelector(".button__theme_next");
 
+let buttonStartPizzavill = document.querySelector(".start-button");
+
+
 let theme = 1;
 let theme_max = 3; 
 
@@ -15,6 +18,10 @@ let theme_max = 3;
 let pages = document.querySelectorAll(".section.theme0"+theme);
 console.log(pages);
 let i = 0;
+
+buttonStartPizzavill.onclick = function() {
+    window.open("https://hahahoj.github.io/pizzaville/", "_blank");
+} 
 
 buttonNext.onclick = function() {
     console.log("press");
