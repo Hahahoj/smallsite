@@ -108,8 +108,8 @@ body {
 }
 
 .button:hover {
-    animation: clicked2 .2s;
-    animation-duration: 0.2s;
+    animation: clicked2 2s;
+    animation-duration: 2s;
     animation-timing-function: ease;
     animation-delay: 0s;
     animation-iteration-count: infinite;
@@ -139,7 +139,7 @@ body {
 
 @keyframes clicked2 {
     50% {
-        transform: translate(0px, 28px) scale(1,1.5);
+        transform: translate(0px, 15px) scale(1,1.5);
     }
 }
 

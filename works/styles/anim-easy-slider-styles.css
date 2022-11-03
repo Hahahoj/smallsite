@@ -122,10 +122,10 @@ body {
 }
 
 .button:hover {
-  -webkit-animation: clicked2 0.2s;
-          animation: clicked2 0.2s;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
+  -webkit-animation: clicked2 2s;
+          animation: clicked2 2s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-animation-delay: 0s;
@@ -176,12 +176,12 @@ body {
 }
 @-webkit-keyframes clicked2 {
   50% {
-    transform: translate(0px, 28px) scale(1, 1.5);
+    transform: translate(0px, 15px) scale(1, 1.5);
   }
 }
 @keyframes clicked2 {
   50% {
-    transform: translate(0px, 28px) scale(1, 1.5);
+    transform: translate(0px, 15px) scale(1, 1.5);
   }
 }
 .section {
