@@ -44,8 +44,8 @@ body {
     background: red;
 }
 
+// Кнопка запуска страницы
 .start-button {
-    display: block;
     margin: 33px 0 0 5px;
     width: 100px;
     height: 100px;
@@ -57,30 +57,14 @@ body {
     font-family: Enthalpy298;
     letter-spacing: 3px;
     font-size: 24px;
-}
 
-.start-button:hover {
-    animation: clicked .2s;
-    animation-duration: 0.2s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: clicked_h;
-}
+    &:hover {
+        animation: clicked_h .2s infinite;
+    }
 
-.start-button:active {
-    animation: clicked .2s;
-    animation-duration: 0.2s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: clicked;
+    &:active {
+        animation: clicked .2s;
+    }
 }
 
 @keyframes clicked {
@@ -94,6 +78,30 @@ body {
         transform: rotate(45deg) scale(1.1);
     }
 }
+
+// .start-button:hover {
+//     animation: clicked_h .2s infinite;
+    // animation-duration: 0.2s;
+    // animation-timing-function: ease;
+    // animation-delay: 0s;
+    // animation-iteration-count: infinite;
+    // animation-direction: normal;
+    // animation-fill-mode: none;
+    // animation-play-state: running;
+    // animation-name: clicked_h;
+// }
+
+// .start-button:active {
+//     animation: clicked .2s;
+    // animation-duration: 0.2s;
+    // animation-timing-function: ease;
+    // animation-delay: 0s;
+    // animation-iteration-count: 1;
+    // animation-direction: normal;
+    // animation-fill-mode: none;
+    // animation-play-state: running;
+    // animation-name: clicked;
+// }
 
 .button {
     width: 50px;

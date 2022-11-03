@@ -32,7 +32,6 @@ body {
 }
 
 .start-button {
-  display: block;
   margin: 33px 0 0 5px;
   width: 100px;
   height: 100px;
@@ -45,47 +44,13 @@ body {
   letter-spacing: 3px;
   font-size: 24px;
 }
-
 .start-button:hover {
-  -webkit-animation: clicked 0.2s;
-          animation: clicked 0.2s;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-name: clicked_h;
-          animation-name: clicked_h;
+  -webkit-animation: clicked_h 0.2s infinite;
+          animation: clicked_h 0.2s infinite;
 }
-
 .start-button:active {
   -webkit-animation: clicked 0.2s;
           animation: clicked 0.2s;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-name: clicked;
-          animation-name: clicked;
 }
 
 @-webkit-keyframes clicked {
