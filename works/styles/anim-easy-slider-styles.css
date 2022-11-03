@@ -18,19 +18,6 @@ body {
   margin: 50px auto;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button-decor {
-  border-top: 2px solid grey;
-  width: 70px;
-  height: 30px;
-  background: red;
-}
-
 .start-button {
   margin: 33px 0 0 5px;
   width: 100px;
@@ -74,6 +61,12 @@ body {
     transform: rotate(45deg) scale(1.1);
   }
 }
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .button {
   width: 50px;
   height: 50px;
@@ -85,47 +78,19 @@ body {
   cursor: pointer;
   font-size: 24px;
 }
-
 .button:hover {
-  -webkit-animation: clicked2 2s;
-          animation: clicked2 2s;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-name: clicked2_h;
-          animation-name: clicked2_h;
+  -webkit-animation: clicked2_h 2s infinite;
+          animation: clicked2_h 2s infinite;
 }
-
 .button:active {
   -webkit-animation: clicked2 0.2s;
           animation: clicked2 0.2s;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-name: clicked2;
-          animation-name: clicked2;
+}
+.button-decor {
+  border-top: 2px solid grey;
+  width: 70px;
+  height: 30px;
+  background: red;
 }
 
 @-webkit-keyframes clicked2_h {
@@ -152,21 +117,28 @@ body {
 .section {
   display: none;
   position: absolute;
-  font-size: 16px;
-  text-align: center;
-  justify-content: center;
   height: 100%;
   border-radius: 20px;
   transition: opacity 1s;
 }
 
 .left-part__markup {
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  display: block;
   width: 50%;
-  text-align: left;
   padding: 40px;
+}
+.left-part__markup h1 {
+  text-align: right;
+  font-size: 80px;
+  color: #151515;
+  padding-bottom: 68px;
+}
+.left-part__markup h2 {
+  font-size: 36px;
+}
+.left-part__markup h3 {
+  color: #151515;
+  font-size: 52px;
+  padding-left: 80px;
 }
 
 .right-part__markup {
@@ -194,26 +166,9 @@ a {
   cursor: pointer;
 }
 
-.left-part__markup h2 {
-  font-size: 36px;
-}
-
-.left-part__markup h3 {
-  color: #151515;
-  font-size: 52px;
-  padding-left: 80px;
-}
-
 .tech {
   padding: 40px;
   padding-top: 260px;
-}
-
-h1 {
-  text-align: right;
-  font-size: 80px;
-  color: #151515;
-  padding-bottom: 68px;
 }
 
 .page001 {
@@ -223,7 +178,6 @@ h1 {
   opacity: 0;
 }
 .page002 {
-  display: flex;
   width: 100%;
   background: red;
   color: aquamarine;

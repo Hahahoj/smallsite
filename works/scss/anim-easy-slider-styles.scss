@@ -1,9 +1,3 @@
-
-// div {
-//     user-select: none;
-//     cursor:pointer;
-// }
-
 @font-face {
     font-family: Radiotechnika;
     src: url("../fonts/Radiotechnika.otf") format("opentype");
@@ -29,19 +23,6 @@ body {
 .container-inner {
     width: 1200px;
     margin: 50px auto;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button-decor{
-    border-top: 2px solid grey;
-    width: 70px;
-    height: 30px;
-    background: red;
 }
 
 // Кнопка запуска страницы
@@ -79,29 +60,12 @@ body {
     }
 }
 
-// .start-button:hover {
-//     animation: clicked_h .2s infinite;
-    // animation-duration: 0.2s;
-    // animation-timing-function: ease;
-    // animation-delay: 0s;
-    // animation-iteration-count: infinite;
-    // animation-direction: normal;
-    // animation-fill-mode: none;
-    // animation-play-state: running;
-    // animation-name: clicked_h;
-// }
-
-// .start-button:active {
-//     animation: clicked .2s;
-    // animation-duration: 0.2s;
-    // animation-timing-function: ease;
-    // animation-delay: 0s;
-    // animation-iteration-count: 1;
-    // animation-direction: normal;
-    // animation-fill-mode: none;
-    // animation-play-state: running;
-    // animation-name: clicked;
-// }
+//Блок кнопок интерфейса
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .button {
     width: 50px;
@@ -113,30 +77,21 @@ body {
     color: whitesmoke;
     cursor: pointer;
     font-size: 24px;
-}
 
-.button:hover {
-    animation: clicked2 2s;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: clicked2_h;
-}
+    &:hover {
+        animation: clicked2_h 2s infinite;
+    }   
 
-.button:active {
-    animation: clicked2 .2s;
-    animation-duration: 0.2s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: clicked2;
+    &:active {
+        animation: clicked2 .2s;
+    }
+
+    &-decor {
+        border-top: 2px solid grey;
+        width: 70px;
+        height: 30px;
+        background: red;
+    }
 }
 
 @keyframes clicked2_h {
@@ -154,23 +109,31 @@ body {
 .section {
     display:none;
     position: absolute;
-    // align-items: center;
-    font-size: 16px;
-    text-align: center;
-    justify-content: center;
-    // line-height: 720px;
     height: 100%;
     border-radius: 20px;
     transition: opacity 1s;
 }
 
 .left-part__markup {
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
-    display:block;
     width: 50%;
-    text-align: left;
     padding: 40px;
+
+    & h1 {
+        text-align: right;
+        font-size: 80px;
+        color:#151515;
+        padding-bottom: 68px;
+    }
+
+    & h2 {
+        font-size: 36px;
+    }
+
+    & h3 {
+        color:#151515;
+        font-size: 52px;
+        padding-left: 80px;
+    }
 }
 
 .right-part__markup {
@@ -198,26 +161,9 @@ a {
     cursor:pointer;
 }
 
-.left-part__markup h2 {
-    font-size: 36px;
-}
-
-.left-part__markup h3 {
-    color:#151515;
-    font-size: 52px;
-    padding-left: 80px;
-}
-
 .tech {
     padding: 40px;
     padding-top: 260px;
-}
-
-h1 {
-    text-align: right;
-    font-size: 80px;
-    color:#151515;
-    padding-bottom: 68px;
 }
 
 .page {
@@ -229,8 +175,6 @@ h1 {
     }
 
     &002 {
-        display:flex;
-        //flex-direction: column;
         width:100%;
         background: red;
         color: aquamarine;
