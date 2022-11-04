@@ -136,7 +136,7 @@ body {
     }
 }
 
-.right-part__markup {
+.description-part__markup {
     display: block;
     width: 50%;
     height: 100%;
@@ -145,9 +145,9 @@ body {
     background-color: #151515;
     text-align: left;
     letter-spacing: 1px;
-    background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/pizzaville/present_f.jpg");
-    background-size:contain;
-    background-repeat: no-repeat;
+    // background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/pizzaville/present_f.jpg");
+    // background-size:contain;
+    // background-repeat: no-repeat;
 }
 
 ul {
@@ -161,22 +161,44 @@ a {
     cursor:pointer;
 }
 
-.tech {
-    padding: 40px;
-    padding-top: 260px;
+.description {
+    &-wanted {
+        color:#151515;
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    &-pizza {
+        padding: 40px;
+        padding-top: 260px;
+    }
+
+    &-house {
+        padding: 40px;
+        padding-top: 375px;
+    }
 }
 
-.poster-wanted {
-    height: 100%;
-    background-image: url(../Pages/intro/developer.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+.background 
+{
+    &-wanted {
+        height: 100%;
+        background-image: url(../Pages/intro/developer.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 
-.intro-text {
-    color:#151515;
-    font-size: 32px;
-    letter-spacing: 2px;
+    &-pizza {
+        background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/pizzaville/present_f.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+
+    &-house {
+        background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/oknahouse/preview.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
 }
 
 .page {
