@@ -114,7 +114,7 @@ body {
     transition: opacity 1s;
 }
 
-.left-part__markup {
+.title-part__markup {
     width: 50%;
     padding: 40px;
 
@@ -166,10 +166,23 @@ a {
     padding-top: 260px;
 }
 
+.poster-wanted {
+    height: 100%;
+    background-image: url(../Pages/intro/developer.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.intro-text {
+    color:#151515;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
 .page {
     &001 {
         width:100%;
-        background: black;
+        background: #00FF00;
         color: aqua;
         opacity: 0;
     }

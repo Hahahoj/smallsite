@@ -122,20 +122,20 @@ body {
   transition: opacity 1s;
 }
 
-.left-part__markup {
+.title-part__markup {
   width: 50%;
   padding: 40px;
 }
-.left-part__markup h1 {
+.title-part__markup h1 {
   text-align: right;
   font-size: 80px;
   color: #151515;
   padding-bottom: 68px;
 }
-.left-part__markup h2 {
+.title-part__markup h2 {
   font-size: 36px;
 }
-.left-part__markup h3 {
+.title-part__markup h3 {
   color: #151515;
   font-size: 52px;
   padding-left: 80px;
@@ -171,9 +171,22 @@ a {
   padding-top: 260px;
 }
 
+.poster-wanted {
+  height: 100%;
+  background-image: url(../Pages/intro/developer.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.intro-text {
+  color: #151515;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
 .page001 {
   width: 100%;
-  background: black;
+  background: #00FF00;
   color: aqua;
   opacity: 0;
 }
