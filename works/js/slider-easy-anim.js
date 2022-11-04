@@ -8,7 +8,8 @@ console.log(buttonNext);
 let buttonThemePrev = document.querySelector(".button__theme_prev");
 let buttonThemeNext = document.querySelector(".button__theme_next");
 
-let buttonStartPizzavill = document.querySelector(".start-button");
+let buttonStartPizzavill = document.querySelector(".pizza-start");
+let buttonStartHouse = document.querySelector(".house-start");
 
 
 let theme = 1;
@@ -21,6 +22,10 @@ let i = 0;
 
 buttonStartPizzavill.onclick = function() {
     window.open("https://hahahoj.github.io/pizzaville/", "_blank");
+} 
+
+buttonStartHouse.onclick = function() {
+    window.open("https://hahahoj.github.io/smallsite/works/Pages/oknahouse/", "_blank");
 } 
 
 buttonNext.onclick = function() {
