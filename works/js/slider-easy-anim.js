@@ -10,7 +10,7 @@ let buttonThemeNext = document.querySelector(".button__theme_next");
 
 let buttonStartPizzavill = document.querySelector(".pizza-start");
 let buttonStartHouse = document.querySelector(".house-start");
-
+let buttonStartInput = document.querySelector(".input-start");
 
 let theme = 1;
 let theme_max = 3; 
@@ -26,6 +26,10 @@ buttonStartPizzavill.onclick = function() {
 
 buttonStartHouse.onclick = function() {
     window.open("https://hahahoj.github.io/smallsite/works/Pages/oknahouse/", "_blank");
+} 
+
+buttonStartInput.onclick = function() {
+    window.open("https://hahahoj.github.io/smallsite/works/Pages/forma/", "_blank");
 } 
 
 buttonNext.onclick = function() {

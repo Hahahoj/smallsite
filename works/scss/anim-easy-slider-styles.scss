@@ -27,14 +27,12 @@ body {
 
 // Кнопка запуска страницы
 .start-button {
-    // margin: 33px 0 0 5px;
     width: 100px;
     height: 100px;
     background: #151515;
     color:aliceblue;
     cursor: pointer;
     border-radius: 50%;
-    // transform: rotate(45deg);
     font-family: Enthalpy298;
     letter-spacing: 3px;
     font-size: 24px;
@@ -60,7 +58,7 @@ body {
     }
 }
 
-//индивидуальные неастройки стартовых кнопок
+//индивидуальные настройки стартовых кнопок
 .pizza-start {
     margin: 33px 0 0 5px;
     transform: rotate(45deg);
@@ -69,6 +67,11 @@ body {
 .house-start {
     margin: 33px 0 0 409px;
     transform: rotate(-45deg);
+}
+
+.input-start {
+    margin: 33px 0 0 5px;
+    transform: rotate(45deg);
 }
 
 //Блок кнопок интерфейса
@@ -118,7 +121,7 @@ body {
 }
 
 .section {
-    display:none;
+    display: none;
     position: absolute;
     height: 100%;
     border-radius: 20px;
@@ -185,6 +188,11 @@ a {
         padding: 40px;
         padding-top: 375px;
     }
+
+    &-input {
+        padding: 40px;
+        padding-top: 360px;
+    }
 }
 
 .background 
@@ -204,6 +212,12 @@ a {
 
     &-house {
         background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/oknahouse/preview.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+
+    &-input {
+        background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/forma/preview.jpg");
         background-size:cover;
         background-repeat: no-repeat;
     }
@@ -234,7 +248,7 @@ a {
     &004 {
         width:100%;
         background: green;
-        color: orange;
+        color:antiquewhite;
         opacity: 0;
     }
 

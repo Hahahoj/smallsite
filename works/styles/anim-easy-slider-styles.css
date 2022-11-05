@@ -69,6 +69,11 @@ body {
   transform: rotate(-45deg);
 }
 
+.input-start {
+  margin: 33px 0 0 5px;
+  transform: rotate(45deg);
+}
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -184,6 +189,10 @@ a {
   padding: 40px;
   padding-top: 375px;
 }
+.description-input {
+  padding: 40px;
+  padding-top: 360px;
+}
 
 .background-wanted {
   height: 100%;
@@ -198,6 +207,11 @@ a {
 }
 .background-house {
   background: linear-gradient(180deg, rgba(15, 15, 15, 0) 10%, rgb(1, 1, 37) 50%, rgb(2, 0, 36) 70%), url("../Pages/oknahouse/preview.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background-input {
+  background: linear-gradient(180deg, rgba(15, 15, 15, 0) 10%, rgb(1, 1, 37) 50%, rgb(2, 0, 36) 70%), url("../Pages/forma/preview.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -223,7 +237,7 @@ a {
 .page004 {
   width: 100%;
   background: green;
-  color: orange;
+  color: antiquewhite;
   opacity: 0;
 }
 .page005 {
