@@ -132,9 +132,21 @@ body {
   position: absolute;
   height: 100%;
   border-radius: 20px;
-  transition: opacity 1s;
+  -webkit-animation: slide-open 0.5s;
+          animation: slide-open 0.5s;
 }
 
+@-webkit-keyframes slide-open {
+  20% {
+    transform: translate(0px, 14px) scale(0.96, 0.96);
+  }
+}
+
+@keyframes slide-open {
+  20% {
+    transform: translate(0px, 14px) scale(0.96, 0.96);
+  }
+}
 .title-part__markup {
   width: 50%;
   padding: 40px;
