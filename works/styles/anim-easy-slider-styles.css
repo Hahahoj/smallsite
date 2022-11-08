@@ -59,6 +59,43 @@ body {
     transform: rotate(45deg) scale(1.1);
   }
 }
+.start-button2 {
+  width: 100px;
+  height: 100px;
+  background: #151515;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 50%;
+  font-family: Enthalpy298;
+  letter-spacing: 3px;
+  font-size: 24px;
+}
+.start-button2:not(focus) {
+  -webkit-animation: clicked_hide_button 2s;
+          animation: clicked_hide_button 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes clicked_hide_button {
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.00001);
+    display: none;
+  }
+}
+
+@keyframes clicked_hide_button {
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.00001);
+    display: none;
+  }
+}
 .pizza-start {
   margin: 33px 0 0 5px;
   transform: rotate(45deg);
@@ -70,6 +107,16 @@ body {
 }
 
 .input-start {
+  margin: 33px 0 0 5px;
+  transform: rotate(45deg);
+}
+
+.bagames-start {
+  margin: 33px 0 0 409px;
+  transform: rotate(-45deg);
+}
+
+.slider-start {
   margin: 33px 0 0 5px;
   transform: rotate(45deg);
 }
@@ -96,14 +143,20 @@ body {
           animation: clicked2_h 2s infinite;
 }
 .button:active {
-  -webkit-animation: clicked2 0.2s;
-          animation: clicked2 0.2s;
+  -webkit-animation: clicked2 1s;
+          animation: clicked2 1s;
 }
 .button-decor {
   border-top: 2px solid grey;
   width: 70px;
   height: 30px;
   background: red;
+}
+.button-decor:first-child {
+  border-bottom-left-radius: 30px;
+}
+.button-decor:last-child {
+  border-bottom-right-radius: 30px;
 }
 
 @-webkit-keyframes clicked2_h {
@@ -132,19 +185,27 @@ body {
   position: absolute;
   height: 100%;
   border-radius: 20px;
-  -webkit-animation: slide-open 0.5s;
-          animation: slide-open 0.5s;
+  -webkit-animation: slide-open 1s;
+          animation: slide-open 1s;
 }
 
 @-webkit-keyframes slide-open {
+  0% {
+    background: grey;
+  }
   20% {
     transform: translate(0px, 14px) scale(0.96, 0.96);
+    background: grey;
   }
 }
 
 @keyframes slide-open {
+  0% {
+    background: grey;
+  }
   20% {
     transform: translate(0px, 14px) scale(0.96, 0.96);
+    background: grey;
   }
 }
 .title-part__markup {
@@ -202,6 +263,14 @@ a {
   padding-top: 375px;
 }
 .description-input {
+  padding: 40px;
+  padding-top: 360px;
+}
+.description-bagames {
+  padding: 40px;
+  padding-top: 375px;
+}
+.description-slider {
   padding: 40px;
   padding-top: 360px;
 }
@@ -270,8 +339,8 @@ a {
 }
 .page006 {
   width: 100%;
-  background: yellow;
-  color: black;
+  background: blueviolet;
+  color: antiquewhite;
   opacity: 0;
 }
 .pages-row {
