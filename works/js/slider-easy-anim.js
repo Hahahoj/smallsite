@@ -11,10 +11,11 @@ let buttonThemeNext = document.querySelector(".button__theme_next");
 let buttonStartPizzavill = document.querySelector(".pizza-start");
 let buttonStartHouse = document.querySelector(".house-start");
 let buttonStartInput = document.querySelector(".input-start");
+let buttonStartBagames = document.querySelector(".bagames-start");
+// let buttonStartSlider = document.querySelector(".slider-start");
 
 let theme = 1;
 let theme_max = 3; 
-
 
 let pages = document.querySelectorAll(".section.theme0"+theme);
 console.log(pages);
@@ -30,6 +31,10 @@ buttonStartHouse.onclick = function() {
 
 buttonStartInput.onclick = function() {
     window.open("https://hahahoj.github.io/smallsite/works/Pages/forma/", "_blank");
+} 
+
+buttonStartBagames.onclick = function() {
+    window.open("https://hahahoj.github.io/smallsite/", "_blank");
 } 
 
 buttonNext.onclick = function() {

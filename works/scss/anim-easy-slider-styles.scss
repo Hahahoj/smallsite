@@ -58,6 +58,33 @@ body {
     }
 }
 
+.start-button2 {
+    width: 100px;
+    height: 100px;
+    background: #151515;
+    color:aliceblue;
+    cursor: pointer;
+    border-radius: 50%;
+    font-family: Enthalpy298;
+    letter-spacing: 3px;
+    font-size: 24px;
+
+    &:not(focus) {
+        animation: clicked_hide_button 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes clicked_hide_button {
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: rotate(360deg) scale(0.00001);
+        display: none;
+    }
+}
+
 //индивидуальные настройки стартовых кнопок
 .pizza-start {
     margin: 33px 0 0 5px;
@@ -70,6 +97,16 @@ body {
 }
 
 .input-start {
+    margin: 33px 0 0 5px;
+    transform: rotate(45deg);
+}
+
+.bagames-start {
+    margin: 33px 0 0 409px;
+    transform: rotate(-45deg);
+}
+
+.slider-start {
     margin: 33px 0 0 5px;
     transform: rotate(45deg);
 }
@@ -97,7 +134,7 @@ body {
     }   
 
     &:active {
-        animation: clicked2 .2s;
+        animation: clicked2 1s;
     }
 
     &-decor {
@@ -105,6 +142,14 @@ body {
         width: 70px;
         height: 30px;
         background: red;
+    }
+
+    &-decor:first-child {
+        border-bottom-left-radius:30px;
+    }
+
+    &-decor:last-child {
+        border-bottom-right-radius:30px;
     }
 }
 
@@ -125,14 +170,22 @@ body {
     position: absolute;
     height: 100%;
     border-radius: 20px;
-    animation: slide-open 0.5s;
+    animation: slide-open 1s;
     //transition: opacity 1s;
 }
 
 @keyframes slide-open {
+    0% { //opacity: 1;
+        background: grey;
+    }
     20% {
 //        transform: translate(0px, 180px) scale(0.5,0.5);
         transform: translate(0px, 14px) scale(0.96,0.96);
+        //opacity: 0.5;
+        background: grey;
+    }
+    100% {
+        //opacity: 1;
     }
 }
 
@@ -198,6 +251,16 @@ a {
     }
 
     &-input {
+        padding: 40px;
+        padding-top: 360px;
+    }
+
+    &-bagames {
+        padding: 40px;
+        padding-top: 375px;
+    }
+
+    &-slider {
         padding: 40px;
         padding-top: 360px;
     }
@@ -281,8 +344,8 @@ a {
 
     &006 {
         width:100%;
-        background: yellow;
-        color:black;
+        background: blueviolet;
+        color:antiquewhite;
         opacity: 0;
     }
 
