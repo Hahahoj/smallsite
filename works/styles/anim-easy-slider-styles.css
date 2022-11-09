@@ -247,6 +247,9 @@ body {
   text-align: left;
   letter-spacing: 1px;
 }
+.description-part__markup h2 {
+  font-size: 20px;
+}
 
 ul {
   list-style-type: circle;
@@ -344,7 +347,7 @@ a {
 .page002 {
   width: 100%;
   background: red;
-  color: aquamarine;
+  color: antiquewhite;
   opacity: 0;
 }
 .page003 {

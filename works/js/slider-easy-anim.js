@@ -13,6 +13,7 @@ let buttonStartHouse = document.querySelector(".house-start");
 let buttonStartInput = document.querySelector(".input-start");
 let buttonStartBagames = document.querySelector(".bagames-start");
 let buttonStartDredd = document.querySelector(".dredd-start");
+let buttonStartSlaine = document.querySelector(".slaine-start");
 
 let theme = 1;
 let theme_max = 3; 
@@ -39,6 +40,10 @@ buttonStartBagames.onclick = function() {
 
 buttonStartDredd.onclick = function() {
     window.open("https://hahahoj.github.io/smallsite/works/Pages/dredd/JudgeDredd.v.1.02.ru.32.zip", "_blank");
+} 
+
+buttonStartSlaine.onclick = function() {
+    window.open("https://hahahoj.github.io/smallsite/works/Pages/slaine/Slainev0.9beta.ru.32bit.zip", "_blank");
 } 
 
 buttonNext.onclick = function() {

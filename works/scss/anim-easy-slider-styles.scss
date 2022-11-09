@@ -230,6 +230,10 @@ body {
     background-color: #151515;
     text-align: left;
     letter-spacing: 1px;
+
+    & h2 {
+        font-size: 20px;
+    }
 }
 
 ul {
@@ -350,7 +354,7 @@ a {
     &002 {
         width:100%;
         background: red;
-        color: aquamarine;
+        color: antiquewhite;
         opacity: 0;
     }
 
