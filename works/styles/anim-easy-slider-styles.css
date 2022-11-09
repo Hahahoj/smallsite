@@ -297,11 +297,11 @@ a {
 }
 .description-tools {
   padding: 40px;
-  padding-top: 254px;
+  padding-top: 260px;
 }
 .description-others {
   padding: 40px;
-  padding-top: 254px;
+  padding-top: 299px;
 }
 
 .background-wanted {
@@ -351,7 +351,7 @@ a {
   background-repeat: no-repeat;
 }
 .background-others {
-  background: linear-gradient(180deg, rgba(15, 15, 15, 0) 10%, rgb(1, 1, 37) 50%, rgb(2, 0, 36) 70%), url("../Pages/others/preview.jpg");
+  background: linear-gradient(180deg, rgba(15, 15, 15, 0) 10%, rgb(1, 1, 37) 44%, rgb(2, 0, 36) 70%), url("../Pages/others/preview.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }

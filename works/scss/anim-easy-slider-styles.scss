@@ -291,12 +291,12 @@ a {
 
     &-tools {
         padding: 40px;
-        padding-top: 254px;
+        padding-top: 260px;
     }
 
     &-others {
         padding: 40px;
-        padding-top: 254px;
+        padding-top: 299px;
     }
 }
 
@@ -358,12 +358,22 @@ a {
     }
 
     &-others {
-        background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/others/preview.jpg");
+        background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 44%, rgba(2,0,36,1) 70%), url("../Pages/others/preview.jpg");
         background-size:contain;
         background-repeat: no-repeat;
+        //animation: background-others-anim 1s infinite;
     }
 
 }
+
+// @keyframes background-others-anim {
+//     25% {
+//     }
+//     50% {
+//         background-position: 10px 10px;
+//     }
+    
+// }
 
 .page {
     &001 {
