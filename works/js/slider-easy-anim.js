@@ -16,7 +16,7 @@ let buttonStartDredd = document.querySelector(".dredd-start");
 let buttonStartSlaine = document.querySelector(".slaine-start");
 
 let theme = 1;
-let theme_max = 3; 
+let theme_max = 4; 
 
 let pages = document.querySelectorAll(".section.theme0"+theme);
 console.log(pages);

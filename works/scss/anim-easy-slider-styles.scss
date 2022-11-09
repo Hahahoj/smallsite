@@ -288,6 +288,16 @@ a {
         padding: 40px;
         padding-top: 360px;
     }
+
+    &-tools {
+        padding: 40px;
+        padding-top: 254px;
+    }
+
+    &-other {
+        padding: 40px;
+        padding-top: 254px;
+    }
 }
 
 .background 
@@ -337,6 +347,12 @@ a {
 
     &-slaine {
         background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/slaine/preview.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+
+    &-tools {
+        background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 30%, rgba(2,0,36,1) 90%), url("../Pages/tools/preview.png");
         background-size:contain;
         background-repeat: no-repeat;
     }
