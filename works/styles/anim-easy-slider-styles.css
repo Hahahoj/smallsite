@@ -299,7 +299,7 @@ a {
   padding: 40px;
   padding-top: 254px;
 }
-.description-other {
+.description-others {
   padding: 40px;
   padding-top: 254px;
 }
@@ -347,6 +347,11 @@ a {
 }
 .background-tools {
   background: linear-gradient(180deg, rgba(15, 15, 15, 0) 10%, rgb(1, 1, 37) 30%, rgb(2, 0, 36) 90%), url("../Pages/tools/preview.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.background-others {
+  background: linear-gradient(180deg, rgba(15, 15, 15, 0) 10%, rgb(1, 1, 37) 50%, rgb(2, 0, 36) 70%), url("../Pages/others/preview.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }
