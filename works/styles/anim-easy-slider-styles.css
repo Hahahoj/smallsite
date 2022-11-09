@@ -356,6 +356,12 @@ a {
   background-repeat: no-repeat;
 }
 
+#ukko {
+  width: 320px;
+  height: 180px;
+  margin-bottom: 40px;
+}
+
 .page001 {
   width: 100%;
   background: #00FF00;
