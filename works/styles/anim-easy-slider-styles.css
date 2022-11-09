@@ -121,6 +121,16 @@ body {
   transform: rotate(45deg);
 }
 
+.dredd-start {
+  margin: 33px 0 0 409px;
+  transform: rotate(-45deg);
+}
+
+.slaine-start {
+  margin: 33px 0 0 5px;
+  transform: rotate(45deg);
+}
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -274,6 +284,14 @@ a {
   padding: 40px;
   padding-top: 360px;
 }
+.description-dredd {
+  padding: 40px;
+  padding-top: 375px;
+}
+.description-slaine {
+  padding: 40px;
+  padding-top: 360px;
+}
 
 .background-wanted {
   height: 100%;
@@ -303,6 +321,16 @@ a {
 }
 .background-slider {
   background: linear-gradient(180deg, rgba(15, 15, 15, 0) 10%, rgb(1, 1, 37) 50%, rgb(2, 0, 36) 70%), url("../Pages/base/preview-slider.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.background-dredd {
+  background: linear-gradient(180deg, rgba(15, 15, 15, 0) 10%, rgb(1, 1, 37) 50%, rgb(2, 0, 36) 70%), url("../Pages/dredd/preview.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.background-slaine {
+  background: linear-gradient(180deg, rgba(15, 15, 15, 0) 10%, rgb(1, 1, 37) 50%, rgb(2, 0, 36) 70%), url("../Pages/slaine/preview.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }

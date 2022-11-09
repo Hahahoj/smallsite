@@ -12,7 +12,7 @@ let buttonStartPizzavill = document.querySelector(".pizza-start");
 let buttonStartHouse = document.querySelector(".house-start");
 let buttonStartInput = document.querySelector(".input-start");
 let buttonStartBagames = document.querySelector(".bagames-start");
-// let buttonStartSlider = document.querySelector(".slider-start");
+let buttonStartDredd = document.querySelector(".dredd-start");
 
 let theme = 1;
 let theme_max = 3; 
@@ -35,6 +35,10 @@ buttonStartInput.onclick = function() {
 
 buttonStartBagames.onclick = function() {
     window.open("https://hahahoj.github.io/smallsite/", "_blank");
+} 
+
+buttonStartDredd.onclick = function() {
+    window.open("https://hahahoj.github.io/smallsite/works/Pages/dredd/JudgeDredd.v.1.02.ru.32.zip", "_blank");
 } 
 
 buttonNext.onclick = function() {

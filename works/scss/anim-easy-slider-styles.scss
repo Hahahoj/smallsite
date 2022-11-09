@@ -111,6 +111,16 @@ body {
     transform: rotate(45deg);
 }
 
+.dredd-start {
+    margin: 33px 0 0 409px;
+    transform: rotate(-45deg);
+}
+
+.slaine-start {
+    margin: 33px 0 0 5px;
+    transform: rotate(45deg);
+}
+
 //Блок кнопок интерфейса
 .buttons {
     display: flex;
@@ -264,6 +274,16 @@ a {
         padding: 40px;
         padding-top: 360px;
     }
+
+    &-dredd {
+        padding: 40px;
+        padding-top: 375px;
+    }
+
+    &-slaine {
+        padding: 40px;
+        padding-top: 360px;
+    }
 }
 
 .background 
@@ -304,6 +324,19 @@ a {
         background-size:contain;
         background-repeat: no-repeat;
     }
+
+    &-dredd {
+        background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/dredd/preview.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+
+    &-slaine {
+        background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/slaine/preview.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+
 }
 
 .page {
