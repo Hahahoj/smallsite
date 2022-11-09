@@ -230,6 +230,10 @@ body {
     background-color: #151515;
     text-align: left;
     letter-spacing: 1px;
+
+    & h2 {
+        font-size: 20px;
+    }
 }
 
 ul {
@@ -284,6 +288,16 @@ a {
         padding: 40px;
         padding-top: 360px;
     }
+
+    &-tools {
+        padding: 40px;
+        padding-top: 254px;
+    }
+
+    &-others {
+        padding: 40px;
+        padding-top: 254px;
+    }
 }
 
 .background 
@@ -337,6 +351,18 @@ a {
         background-repeat: no-repeat;
     }
 
+    &-tools {
+        background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 30%, rgba(2,0,36,1) 90%), url("../Pages/tools/preview.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+
+    &-others {
+        background: linear-gradient(180deg, rgba(15,15,15,0) 10%, rgba(1,1,37,1) 50%, rgba(2,0,36,1) 70%), url("../Pages/others/preview.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+
 }
 
 .page {
@@ -350,7 +376,7 @@ a {
     &002 {
         width:100%;
         background: red;
-        color: aquamarine;
+        color: antiquewhite;
         opacity: 0;
     }
 
