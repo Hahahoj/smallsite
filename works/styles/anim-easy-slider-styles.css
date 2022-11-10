@@ -367,25 +367,25 @@ a {
 
 .page001 {
   width: 100%;
-  background: #00FF00;
+  background: #807060;
   color: aqua;
   opacity: 0;
 }
 .page002 {
   width: 100%;
-  background: red;
+  background: #bf3030;
   color: antiquewhite;
   opacity: 0;
 }
 .page003 {
   width: 100%;
-  background: blue;
+  background: #0248cc;
   color: antiquewhite;
   opacity: 0;
 }
 .page004 {
   width: 100%;
-  background: green;
+  background: #2b8000;
   color: antiquewhite;
   opacity: 0;
 }
@@ -398,6 +398,18 @@ a {
 .page006 {
   width: 100%;
   background: blueviolet;
+  color: antiquewhite;
+  opacity: 0;
+}
+.page007 {
+  width: 100%;
+  background: #ff8049;
+  color: antiquewhite;
+  opacity: 0;
+}
+.page008 {
+  width: 100%;
+  background: #b35a34;
   color: antiquewhite;
   opacity: 0;
 }
