@@ -36,6 +36,7 @@ body {
     font-family: Enthalpy298;
     letter-spacing: 3px;
     font-size: 24px;
+    border-width:0;
 
     &:hover {
         animation: clicked_h .2s infinite;
@@ -68,6 +69,7 @@ body {
     font-family: Enthalpy298;
     letter-spacing: 3px;
     font-size: 24px;
+    border-width:0;
 
     &:not(focus) {
         animation: clicked_hide_button 2s;
@@ -138,6 +140,7 @@ body {
     color: whitesmoke;
     cursor: pointer;
     font-size: 24px;
+    border-width:0;
 
     &:hover {
         animation: clicked2_h 2s infinite;
