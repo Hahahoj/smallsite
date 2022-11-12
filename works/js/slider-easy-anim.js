@@ -1,9 +1,32 @@
 /* eslint-disable prefer-const */
 "use strict";
 
+// Подстраеваем масштаб под экран
+let maxW;
+
+function zoomOutMobile() {
+    let viewport = document.querySelector('meta[name="viewport"]');
+    
+    if ( viewport ) {
+        maxW=1;
+        //console.log(window.innerWidth);
+        if ( window.innerWidth < 1200 ) {maxW=window.innerWidth/1200;};
+        viewport.content = "initial-scale="+String(maxW);
+        //console.log("initial-scale="+String(maxW));
+        viewport.content = "width=device-width";
+    }
+}
+
+window.addEventListener('resize', function(event) {
+    zoomOutMobile();
+}, true);
+
+zoomOutMobile();
+
+// Описываем кнопки
 let buttonPrev = document.querySelector(".button__prev");
 let buttonNext = document.querySelector(".button__next");
-console.log(buttonNext);
+//console.log(buttonNext);
 
 let buttonThemePrev = document.querySelector(".button__theme_prev");
 let buttonThemeNext = document.querySelector(".button__theme_next");
