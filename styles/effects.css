@@ -1,5 +1,10 @@
 .sea {
-  z-index: -5;
+  display: none;
+  position: absolute;
+  top: 1344px;
+  width: 150vw;
+  z-index: -1;
+  left: -50vw;
 }
 
 /* Animation */
@@ -53,10 +58,4 @@
     transform: translate3d(85px, 0, 0);
   }
 }
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .waves {
-    height: 40px;
-    min-height: 40px;
-  }
-}/*# sourceMappingURL=effects.css.map */
+/*Shrinking for mobile*//*# sourceMappingURL=effects.css.map */

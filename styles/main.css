@@ -52,6 +52,9 @@
   align-items: center;
   text-align: center;
 }
+.main__button:active {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
 .main__markup-textblock {
   position: relative;
   width: 760px;

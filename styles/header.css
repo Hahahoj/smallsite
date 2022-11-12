@@ -6,6 +6,12 @@
 }
 .menu__item {
   color: whitesmoke;
+  cursor: pointer;
+}
+.menu__item:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: -58px;
 }
 .menu-row {
   margin: 0px 0px 0px 650px;

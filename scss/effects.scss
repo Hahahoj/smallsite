@@ -1,8 +1,15 @@
 .sea {
-    z-index : -5;
+    display: none;
+    position: absolute;
+    top: 1344px;
+//    left: calc((100vw-1280px)/2);
+//    width: 100vw;
+    //height:40px;
+    
+    width: calc(100vw*1.5);
+    z-index: -1;
+    left: calc(-100vw/2);
 }
-
-
 
 /* Animation */
 
@@ -26,6 +33,7 @@
     animation-duration: 20s;
 }
 
+//-90  85
 @keyframes move-forever {
     0% {
         transform: translate3d(-90px,0,0);
@@ -37,9 +45,9 @@
 }
 
 /*Shrinking for mobile*/
-@media (max-width: 768px) {
-    .waves {
-        height:40px;
-        min-height:40px;
-    }
-}                                         
+// @media (max-width: 768px) {
+    // .waves {
+    //     height:40px;
+    //     min-height:40px;
+    // }
+//}                                         
