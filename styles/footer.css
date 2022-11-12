@@ -8,11 +8,21 @@
   color: #FFFFFF;
 }
 .footer__email {
-  width: 542px;
+  margin-left: 448px;
+  width: 94px;
   background: url(../images/footer/mailru.svg);
   height: 84px;
   background-repeat: no-repeat;
   background-position: right;
+  cursor: pointer;
+}
+.footer__email:hover {
+  -webkit-animation: hover_button 0.3s;
+          animation: hover_button 0.3s;
+}
+.footer__email:active {
+  -webkit-animation: active_button 0.6s;
+          animation: active_button 0.6s;
 }
 .footer__telegram {
   margin-right: 10px;
@@ -22,10 +32,41 @@
   background-repeat: no-repeat;
   background-position: right;
   flex-shrink: 0;
+  cursor: pointer;
+}
+.footer__telegram:hover {
+  -webkit-animation: hover_button 0.3s;
+          animation: hover_button 0.3s;
+}
+.footer__telegram:active {
+  -webkit-animation: active_button 0.6s;
+          animation: active_button 0.6s;
 }
 .footer-row {
   height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@-webkit-keyframes hover_button {
+  50% {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes hover_button {
+  50% {
+    transform: scale(1.25);
+  }
+}
+@-webkit-keyframes active_button {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes active_button {
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=footer.css.map */

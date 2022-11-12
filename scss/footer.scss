@@ -10,11 +10,21 @@
     }
 
     &__email {
-        width: 542px;
+        margin-left: 448px;
+        width: 94px;
         background: url(../images/footer/mailru.svg);
         height: 84px;
         background-repeat: no-repeat;
         background-position: right;
+        cursor:pointer;
+
+        &:hover {
+            animation: hover_button 0.3s;
+        }    
+
+        &:active {
+            animation: active_button 0.6s;
+        }
     }
 
     &__telegram {
@@ -25,6 +35,15 @@
         background-repeat: no-repeat;
         background-position: right;
         flex-shrink: 0;
+        cursor:pointer;
+
+        &:hover {
+            animation: hover_button 0.3s;
+        }
+        
+        &:active {
+            animation: active_button 0.6s;
+        }
     }
 
 
@@ -33,5 +52,17 @@
         display:flex;
         justify-content:center;
         align-items:center;
+    }
+}
+
+@keyframes hover_button {
+    50% {
+        transform: scale(1.25);
+    }
+}
+
+@keyframes active_button {
+    100% {
+        transform: rotate(360deg);
     }
 }
