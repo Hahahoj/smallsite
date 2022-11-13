@@ -1,25 +1,39 @@
 /* eslint-disable prefer-const */
 "use strict";
 
-// Подстраеваем масштаб под экран
-let maxW;
+//Подстраеваем масштаб под экран
+let maxW, maxH, position=0;
 
 function zoomOutMobile() {
     let viewport = document.querySelector('meta[name="viewport"]');
     
     if ( viewport ) {
+        
         maxW=1;
-        //console.log(window.innerWidth);
+        maxH=1;
         if ( window.innerWidth < 1200 ) {maxW=window.innerWidth/1200;};
-        viewport.content = "initial-scale="+String(maxW);
-        //console.log("initial-scale="+String(maxW));
-        viewport.content = "width=device-width";
+        if ( window.innerHeight < 860 ) {maxH=window.innerHeight/860;};
+        viewport.content = "initial-scale=1";
+        //console.log("initial-scale="+String( maxW<maxH ? maxW : maxH));
+        //viewport.content = "initial-scale=10";
+        // viewport.content = "width=device-width";
+        // viewport.content = "height=device-height";
+        viewport.content = String( maxW<maxH ? "width=device-width" : "height=device-height");
+        document.body.style.zoom = maxW<maxH ? maxW : maxH;
+        //console.log("+");
     }
 }
 
-window.addEventListener('resize', function(event) {
-    zoomOutMobile();
-}, true);
+document.addEventListener("DOMContentLoaded", function(event)
+{
+    window.onresize = function() {
+        zoomOutMobile();    
+    };
+});
+
+// window.addEventListener('resize', function(event) {
+//     zoomOutMobile();
+// }, true);
 
 zoomOutMobile();
 
@@ -42,7 +56,7 @@ let theme = 1;
 let theme_max = 5; 
 
 let pages = document.querySelectorAll(".section.theme0"+theme);
-console.log(pages);
+//console.log(pages);
 let i = 0;
 
 buttonStartPizzavill.onclick = function() {
@@ -70,10 +84,10 @@ buttonStartSlaine.onclick = function() {
 } 
 
 buttonNext.onclick = function() {
-    console.log("press");
+    //console.log("press");
     let str = pages[i].className;
     pages[i++].className = str.replace(" showed", "");
-    console.log(pages);
+    //console.log(pages);
     if (i >= pages.length) {
         theme = theme+1;
         if (theme>theme_max) {
