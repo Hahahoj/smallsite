@@ -12,15 +12,15 @@ function zoomOutMobile() {
         maxW=1;
         maxH=1;
         if ( window.innerWidth < 1200 ) {maxW=window.innerWidth/1200;};
-        if ( window.innerHeight < 860 ) {maxH=window.innerHeight/900;};
+        if ( window.innerHeight < 960 ) {maxH=window.innerHeight/960;};
         viewport.content = "initial-scale=1";
         if ( maxW<maxH ) {
             position=1;
-            viewport.content = "height=0";
+//            viewport.content = "height=0";
             viewport.content = "width=device-width";
         } else {
             position=1;
-            viewport.content = "width=0";
+//            viewport.content = "width=0";
             viewport.content = "height=device-height";
         };
         document.body.style.zoom = maxW<maxH ? maxW : maxH;
