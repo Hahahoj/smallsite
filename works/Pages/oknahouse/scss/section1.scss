@@ -93,6 +93,7 @@
         &__checkbox {
             margin-bottom: 24px;
             padding-left: 30px;
+            cursor: pointer;
         }
 
         &__input-fields {
@@ -123,6 +124,7 @@
         line-height: 14px;
         display: inline-block;
         vertical-align: middle;
+        cursor:pointer;
     }
 
     &__input-field {
@@ -161,6 +163,7 @@
         font-size: 14px;
         line-height: 16px;
         display: block;
+        cursor: pointer;
     }
 
     &__measure-tape {
@@ -201,6 +204,7 @@
             background-repeat: no-repeat;
             background-position: 3px -5px;
             vertical-align: middle;
+            cursor: pointer;
         }
     }
 }
