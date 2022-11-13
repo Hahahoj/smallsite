@@ -5,35 +5,31 @@
 let maxW, maxH, position=0;
 
 function zoomOutMobile() {
+    if (position>0) { position--; return; };
     let viewport = document.querySelector('meta[name="viewport"]');
     
     if ( viewport ) {
-        
         maxW=1;
         maxH=1;
         if ( window.innerWidth < 1200 ) {maxW=window.innerWidth/1200;};
-        if ( window.innerHeight < 860 ) {maxH=window.innerHeight/860;};
+        if ( window.innerHeight < 860 ) {maxH=window.innerHeight/900;};
         viewport.content = "initial-scale=1";
-        //console.log("initial-scale="+String( maxW<maxH ? maxW : maxH));
-        //viewport.content = "initial-scale=10";
-        // viewport.content = "width=device-width";
-        // viewport.content = "height=device-height";
-        viewport.content = String( maxW<maxH ? "width=device-width" : "height=device-height");
+        if ( maxW<maxH ) {
+            position=1;
+            viewport.content = "height=0";
+            viewport.content = "width=device-width";
+        } else {
+            position=1;
+            viewport.content = "width=0";
+            viewport.content = "height=device-height";
+        };
         document.body.style.zoom = maxW<maxH ? maxW : maxH;
-        //console.log("+");
     }
 }
 
-document.addEventListener("DOMContentLoaded", function(event)
-{
-    window.onresize = function() {
-        zoomOutMobile();    
-    };
-});
-
-// window.addEventListener('resize', function(event) {
-//     zoomOutMobile();
-// }, true);
+window.addEventListener('resize', function(event) {
+    zoomOutMobile();
+}, true);
 
 zoomOutMobile();
 
