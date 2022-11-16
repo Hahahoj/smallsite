@@ -1,0 +1,22 @@
+@media screen and (max-width: 1160px) {
+    .menu-row {
+        margin: 0px auto;
+    };
+};
+
+@media screen and (max-width: 560px) {
+    .menu-row {
+        font-size: 14px;
+    };
+
+    .menu__logo {
+        width: 30px;
+        height: 30px;
+    }
+};
+
+@media screen and (max-width: 390px) {
+    .menu__logo {
+        display: none;
+    }
+}

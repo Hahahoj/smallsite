@@ -1,0 +1,56 @@
+@media screen and (max-width: 1239px) {
+    //перенос кнопки
+    .main__button {
+        position: absolute;
+        left: 780px;
+        top: 170px;
+    }
+};
+
+@media screen and (max-width: 980px) {
+    .main {
+        &__button {
+            top: 480px;
+            left: 135px;
+        }
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .main {
+        &__button {
+            top: 310px;
+            left: 135px;
+        }
+
+        &__title {
+            font-size: 54px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__description {
+            font-size: 12px;
+        }
+    }
+};
+
+// @media screen and (max-width: 448px) {
+//     .main {
+//         &__button {
+//             top: 330px;
+//             left: 135px;
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 408px) {
+//     .main {
+//         &__button {
+//             top: 370px;
+//             left: 135px;
+//         }
+//     }
+// }

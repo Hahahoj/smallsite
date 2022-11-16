@@ -60,7 +60,7 @@
 }
 .main__markup-textblock {
   position: relative;
-  width: 760px;
+  max-width: 760px;
   text-align: center;
 }
 

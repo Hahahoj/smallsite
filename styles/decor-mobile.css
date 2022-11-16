@@ -1,0 +1,10 @@
+@media screen and (max-width: 1190px) {
+  .decor__my-photo {
+    display: none;
+  }
+}
+@media screen and (max-width: 639px) {
+  .decor__icons {
+    display: none;
+  }
+}/*# sourceMappingURL=decor-mobile.css.map */

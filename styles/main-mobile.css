@@ -1,0 +1,28 @@
+@media screen and (max-width: 1239px) {
+  .main__button {
+    position: absolute;
+    left: 780px;
+    top: 170px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .main__button {
+    top: 480px;
+    left: 135px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .main__button {
+    top: 310px;
+    left: 135px;
+  }
+  .main__title {
+    font-size: 54px;
+  }
+  .main__subtitle {
+    font-size: 16px;
+  }
+  .main__description {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=main-mobile.css.map */
