@@ -1,0 +1,26 @@
+@media screen and (max-width: 1279px) {
+  .skills-sphere {
+    position: absolute;
+    right: -200px;
+    top: 80px;
+    width: 689px;
+    height: 689px;
+    background: linear-gradient(180deg, #9DFA73 30.6%, rgba(157, 250, 115, 0.684964) 45.7%, rgba(157, 250, 115, 0.401965) 59.49%, rgba(157, 250, 115, 0) 100%);
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .text-block-markup {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .text-block__title {
+    font-size: 54px;
+  }
+  .text-block__subtitle {
+    font-size: 16px;
+  }
+  .text-block__description {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=skills-mobile.css.map */

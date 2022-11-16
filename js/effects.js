@@ -3,9 +3,9 @@
 // параллакс
 document.addEventListener('scroll', function(event) {
     let sY=scrollY;
-    //console.log(sY);
-	if (sY<1150) {
-        console.log(sY);
+    console.log(document.documentElement.clientWidth);
+	if ((sY<1150)&&(document.documentElement.clientWidth>1239)) {
+        //console.log(sY);
         let buffer = document.querySelector(".about-sphere");
         buffer.style.top = Math.floor((sY-1066)/15+1066)+"px";
         buffer = document.querySelector(".skills-sphere");
