@@ -4,8 +4,8 @@
 @import "main.css";
 @import "decor.css";
 @import "skills.css";
-@import "about.css";
-@import "portfolio.css";
+@import "about.css"; 
+@import "portfolio.css"; 
 @import "review.css";
 @import "footer.css";
 @import "effects.css";
@@ -13,9 +13,9 @@
 @import "main-mobile.css";
 @import "decor-mobile.css";
 @import "skills-mobile.css";
-@import "about-mobile.css";
-@import "portfolio-mobile.css";
+@import "about-mobile.css"; 
+@import "portfolio-mobile.css"; 
 @import "review-mobile.css";
 @import "footer-mobile.css";
-@import "effects-mobile.css";
-@import "base-mobile.css";
+/* @import "effects-mobile.css";
+@import "base-mobile.css"; */
