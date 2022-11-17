@@ -12,6 +12,9 @@
   .text-block-markup {
     margin-top: 150px;
   }
+  .skill__item {
+    line-height: 21px;
+  }
 }
 @media screen and (max-width: 599px) {
   .text-block__title {

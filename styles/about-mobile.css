@@ -1,0 +1,32 @@
+@media screen and (max-width: 1279px) {
+  .about-block-markup {
+    margin: 714px 10px 0 10px;
+  }
+}
+@media screen and (max-width: 1079px) {
+  .about-sphere {
+    position: absolute;
+    width: 1159px;
+    height: 1159px;
+    left: -280px;
+    top: 1240px;
+    background: linear-gradient(180deg, #9DFA73 30.6%, rgba(157, 250, 115, 0.684964) 45.7%, rgba(157, 250, 115, 0.401965) 59.49%, rgba(157, 250, 115, 0) 100%);
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .about-block-markup {
+    margin: 780px 10px 0 10px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .about-sphere {
+    position: absolute;
+    width: 1159px;
+    height: 1159px;
+    left: -330px;
+    top: 1150px;
+    background: linear-gradient(180deg, #9DFA73 30.6%, rgba(157, 250, 115, 0.684964) 45.7%, rgba(157, 250, 115, 0.401965) 59.49%, rgba(157, 250, 115, 0) 100%);
+    border-radius: 50%;
+    z-index: -1;
+  }
+}/*# sourceMappingURL=about-mobile.css.map */

@@ -1,0 +1,18 @@
+@media screen and (max-width: 999px) {
+  .footer__firmname {
+    padding-left: 20px;
+    width: 806px;
+    text-align: start;
+    flex-shrink: 1;
+  }
+  .footer__email {
+    margin-left: 0px;
+    flex-shrink: 0;
+  }
+  .footer-row {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=footer-mobile.css.map */
