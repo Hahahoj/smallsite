@@ -1,1 +1,38 @@
-/*# sourceMappingURL=base-mobile.css.map */
+@media screen and (max-width: 370px) {
+  .intersection {
+    display: flex;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .header {
+    display: none;
+  }
+  .main {
+    display: none;
+  }
+  .decor {
+    display: none;
+  }
+  .skills {
+    display: none;
+  }
+  .about {
+    display: none;
+  }
+  .portfolio {
+    display: none;
+  }
+  .review {
+    display: none;
+  }
+  .sea {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+}/*# sourceMappingURL=base-mobile.css.map */

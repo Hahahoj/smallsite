@@ -4,11 +4,11 @@
   background-image: url(../images/header/profile-item.svg);
   background-size: cover;
 }
-.menu__item {
+.menu__item a {
   color: whitesmoke;
   cursor: pointer;
 }
-.menu__item:hover {
+.menu__item a:hover {
   text-decoration: underline;
   text-decoration-thickness: 4px;
   text-underline-offset: -58px;

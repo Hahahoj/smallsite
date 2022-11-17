@@ -1,12 +1,56 @@
 @media screen and (max-width: 1268px) {
   .portfolio-sphere {
-    margin: -517px 0 0 -374px;
+    margin: 50px 0 0 -374px;
   }
   .portfolio-block-markup {
-    margin: -1105px 0 0 10px;
+    margin: -1105px 0 0 5px;
+  }
+  .portfolio-block__title {
+    font-size: 56px;
+  }
+  .portfolio-block__subtitle {
+    font-size: 18px;
+  }
+  .portfolio-block__description {
+    font-size: 16px;
+  }
+  .portfolio-block__description_decor {
+    font-size: 20px;
   }
   .dredd2 {
     margin-top: -1169px;
     margin-left: -148px;
+  }
+  .conversion {
+    margin-top: -1070px;
+    margin-left: 778px;
+  }
+}
+@media screen and (max-width: 939px) {
+  .conversion {
+    margin-top: -1005px;
+    margin-left: 391px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .dredd1 {
+    margin-top: -1007px;
+    margin-left: -95px;
+    transform: scale(0.7);
+  }
+  .dredd2 {
+    margin-top: -898px;
+    margin-left: -148px;
+    transform: scale(0.5);
+  }
+  .cotovasia {
+    margin-left: 30px;
+  }
+  .conversion {
+    margin-top: -712px;
+    margin-left: 8px;
+  }
+  .about-block__photo {
+    display: none;
   }
 }/*# sourceMappingURL=portfolio-mobile.css.map */

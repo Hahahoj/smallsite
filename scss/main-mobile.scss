@@ -37,20 +37,20 @@
     }
 };
 
-// @media screen and (max-width: 448px) {
-//     .main {
-//         &__button {
-//             top: 330px;
-//             left: 135px;
-//         }
-//     }
-// }
+@media screen and (max-width: 448px) {
+    .main {
+        &__button {
+            top: 330px;
+            left: 135px;
+        }
+    }
+}
 
-// @media screen and (max-width: 408px) {
-//     .main {
-//         &__button {
-//             top: 370px;
-//             left: 135px;
-//         }
-//     }
-// }
+@media screen and (max-width: 408px) {
+    .main {
+        &__button {
+            top: 360px;
+            left: 135px;
+        }
+    }
+}

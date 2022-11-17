@@ -25,4 +25,16 @@
   .main__description {
     font-size: 12px;
   }
+}
+@media screen and (max-width: 448px) {
+  .main__button {
+    top: 330px;
+    left: 135px;
+  }
+}
+@media screen and (max-width: 408px) {
+  .main__button {
+    top: 360px;
+    left: 135px;
+  }
 }/*# sourceMappingURL=main-mobile.css.map */

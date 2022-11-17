@@ -56,7 +56,7 @@
 }
 .portfolio-block-markup {
   margin: -1090px 0 0 750px;
-  width: 500px;
+  max-width: 400px;
 }
 
 .slain2 {

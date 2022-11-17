@@ -1,15 +1,73 @@
 @media screen and (max-width: 1268px) {
     .portfolio-sphere {
         //position: absolute;
-        margin: -517px 0 0 -374px;
+        margin: 50px 0 0 -374px;
     }
 
-    .portfolio-block-markup {
-        margin:-1105px 0 0 10px;
+    .portfolio {
+
+        &-block-markup {
+            margin:-1105px 0 0 5px;
+        }
+
+        &-block__title {
+            font-size: 56px;
+        }
+
+        &-block__subtitle {
+            font-size: 18px;
+        }
+
+        &-block__description {
+            font-size: 16px;
+
+            &_decor {
+                font-size: 20px;
+            }
+        }
     }
 
     .dredd2 {
         margin-top: -1169px;
         margin-left: -148px;
+    }
+
+    .conversion {
+        margin-top: -1070px;
+        margin-left: 778px;
+    }
+}
+
+@media screen and (max-width: 939px) {
+    .conversion {
+        margin-top: -1005px;
+        margin-left: 391px;
+    }
+}
+
+@media screen and (max-width: 749px) {
+
+    .dredd1 {
+        margin-top: -1007px;
+        margin-left: -95px;
+        transform: scale(0.7);
+    }
+    .dredd2 {
+        margin-top: -898px;
+        margin-left: -148px;
+        transform: scale(0.5);
+    }
+    .cotovasia {
+        //top: 256px;
+        margin-left: 30px;
+    }
+
+    .conversion {
+        margin-top: -712px;
+        margin-left: 8px;
+    }
+
+    .about-block__photo {
+        display: none;
     }
 }

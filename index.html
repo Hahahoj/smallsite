@@ -17,22 +17,27 @@
     </head>
 
     <body>
+        <section class = "intersection">
+            <p>Сайт не предназначен для отображения в таком разрешении.
+                Смените ориентацию экрана или ваше устройство.
+            </p>
+        </section>
         <header class = "header">
             <div class="container">
                 <nav class = "menu">
                     <ul class = "menu-row">
                         <li class = "menu__logo"></li>
-                        <li class = "menu__item sec_about">Обо мне</li>
-                        <li class = "menu__item sec_skill">Навыки</li>
-                        <li class = "menu__item sec_review">Отзывы</li>
-                        <li class = "menu__item sec_contacts">Контакты</li>
-                        <li class = "menu__item sec_portfolio">Портфолио</li>
+                        <li class = "menu__item sec_about"><a href="#about">Обо мне</a></li>
+                        <li class = "menu__item sec_skill"><a href="#skills">Навыки</a></li>
+                        <li class = "menu__item sec_review"><a href="#review">Отзывы</a></li>
+                        <li class = "menu__item sec_contacts"><a href="#footer">Контакты</a></li>
+                        <li class = "menu__item sec_portfolio"><a href="#portfolio">Портфолио</a></li>
                     </ul>       
                 </nav>
             </div>
         </header>
 
-        <main class="main">
+        <main class="main" id="main">
             <div class="container">
 
                 <div class="main__markup-textblock">
@@ -66,7 +71,7 @@
             <div class="decor__icons"></div>
             <div class="decor__my-photo"></div>
         </div>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="skills-sphere"></div>
             <div class="text-block-markup">               
                 <h3 class="text-block__subtitle">МОИ</h3>
@@ -98,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-sphere"></div>
             <div class="about-block-markup">   
                 <h2 class="about-block__title">ОБО МНЕ</h2>            
@@ -128,14 +133,14 @@
             <div class="about-block__photo">
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="portfolio-sphere"></div>
             <div class="portfolio-block-markup">   
                 <h3 class="portfolio-block__subtitle">МОИ РАБОТЫ</h3>
                 <h2 class="portfolio-block__title">ПОРТФОЛИО</h2>            
                 <div class="portfolio-block__description">С некоторыми работами можно 
-                    ознакомиться на</div>
-                <a class="portfolio-block__description_decor" href="./works/index.html">этом сайте</a>
+                    ознакомиться</div>
+                <a class="portfolio-block__description_decor" href="./works/index.html">на этом сайте</a>
             </div>   
             <div class="slain2"></div>
             <div class="cotovasia"></div>
@@ -145,7 +150,7 @@
             <div class="conversion"></div>
         </section>
 
-        <section class="review">
+        <section class="review" id="review">
             <div class="bottom-background"></div>
             <div class="seagrass-background"></div>
             <div class="review-block-markup">   
@@ -207,7 +212,7 @@
             </div>
             <!--Waves end-->
         </section>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="footer-background"></div>
             <div class="footer-row">
                 <div class="footer__firmname"> (С) РЕТРОГОМЕР, 2022</div>                
