@@ -1,0 +1,10 @@
+@media screen and (max-width: 1108px) {
+  .review-card:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 832px) {
+  .review-card:nth-child(3) {
+    display: none;
+  }
+}/*# sourceMappingURL=review-mobile.css.map */
