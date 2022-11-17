@@ -1,10 +1,12 @@
 .bottom-background {
+  width: 100%;
   margin-top: 1262px;
   height: 616px;
   background: linear-gradient(168deg, rgba(10, 184, 79, 0.89) 26.35%, rgba(52, 179, 8, 0.726817) 33.44%, rgba(52, 179, 8, 0.726817) 41.85%, rgba(45, 167, 2, 0) 73.1%);
 }
 
 .seagrass-background {
+  width:100%;
   margin-top: -949px;
   background: url(../images/review/bottom.png);
   height: 358px;
