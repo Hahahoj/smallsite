@@ -67,6 +67,7 @@ body {
     background-image: url("../images/block1/background.png");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     padding: 104px 0 154px 0;
 }
 
@@ -114,8 +115,9 @@ body {
 
 /* block 2 */
 .car {
-    padding: 100px 0; 
-    padding-bottom: 0;
+    padding: 100px 0;
+    /* расскоментить под шаблон */
+    /* padding-bottom: 0; */
 }
 
 .sub-title {
@@ -138,8 +140,13 @@ body {
     margin-top: 40px;
 }
 
+.car-item-image:hover img {
+    transform: scale(1.1);
+}
+
 .car-item-image img {
     vertical-align: bottom;
+    transition: all .3s;
 }
 
 .car-item-title {
