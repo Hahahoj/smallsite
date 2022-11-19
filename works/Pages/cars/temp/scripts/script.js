@@ -4,7 +4,6 @@ document.getElementById('main-action').onclick = function () {
 
 let buttons = document.getElementsByClassName('car-button');
 
-// онклики по интенсиву
 for (let i=0; i<buttons.length; i++) {
     buttons[i].onclick = function () {
         document.getElementById('price').scrollIntoView({behavior:"smooth"});
