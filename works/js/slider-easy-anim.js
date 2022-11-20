@@ -43,6 +43,7 @@ let buttonThemeNext = document.querySelector(".button__theme_next");
 
 let buttonStartPizzavill = document.querySelector(".pizza-start");
 let buttonStartHouse = document.querySelector(".house-start");
+let buttonStartCarsharing = document.querySelector(".carsharing-start");
 let buttonStartInput = document.querySelector(".input-start");
 let buttonStartBagames = document.querySelector(".bagames-start");
 let buttonStartDredd = document.querySelector(".dredd-start");
@@ -61,6 +62,10 @@ buttonStartPizzavill.onclick = function() {
 
 buttonStartHouse.onclick = function() {
     window.open("https://hahahoj.github.io/smallsite/works/Pages/oknahouse/", "_blank");
+} 
+
+buttonStartCarsharing.onclick = function() {
+    window.open("https://hahahoj.github.io/carsharing/", "_blank");
 } 
 
 buttonStartInput.onclick = function() {
