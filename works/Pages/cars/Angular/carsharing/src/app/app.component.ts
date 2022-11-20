@@ -1,5 +1,6 @@
 import {Component, HostListener} from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { appService } from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -13,54 +14,13 @@ export class AppComponent {
     phone:['', Validators.required],
     car:['', Validators.required]
   });
+  
+  carsData: any;
+  
+  constructor(private fb: FormBuilder, private appService:appService) {  }
 
-  carsData = [
-    {
-      image:"../assets/images/block2/1.png",
-      name:"Lamborghini Huracan Spyder",
-      gear:"Полный",
-      engine:5.2,
-      places:5
-    },
-    {
-      image:"../assets/images/block2/2.png",
-      name:"Chevrolet Corvette",
-      gear:"Полный",
-      engine:6.2,
-      places:2
-    },
-    {
-      image:"../assets/images/block2/3.png",
-      name:"Ferrari California",
-      gear:"Полный",
-      engine:3.9,
-      places:4
-    },
-    {
-      image:"../assets/images/block2/4.png",
-      name:"Lamborghini Urus",
-      gear:"Полный",
-      engine:4,
-      places:5
-    },
-    {
-      image:"../assets/images/block2/5.png",
-      name:"Audi R8",
-      gear:"Полный",
-      engine:5.2,
-      places:2
-    },
-    {
-      image:"../assets/images/block2/6.png",
-      name:"Chevrolet Camaro",
-      gear:"Полный",
-      engine:4,
-      places:4
-    }
-  ]
-
-  constructor(private fb: FormBuilder) {
-
+  ngOnInit() {
+    this.appService.getData(this.category).subscribe(carsData => this.carsData = carsData);
   }
 
   goScroll(target: HTMLElement, car?: any) {
@@ -68,6 +28,12 @@ export class AppComponent {
     if (car) {
       this.priceForm.patchValue({car: car.name});
     }
+  }
+
+  category: string = 'sport';
+  toggleCategory(category: string) {
+    this.category = category;
+    this.ngOnInit();
   }
 
   trans: any;
@@ -83,9 +49,35 @@ export class AppComponent {
   }
 
   onSubmit(){
+    
+    // Для внешней валидации
+    // this.appService.sendQuery(this.priceForm.value)
+    // .subscribe(
+    //   {
+    //     next: (response: any) => {
+    //       alert(response.message);
+    //       this.priceForm.reset();
+    //     },
+    //     error: (response) => {
+    //       alert(response.error.message);
+
+    //     }
+    //   }
+    // ); 
+
     if (this.priceForm.valid) {
-      alert("Спасибо за заявку. Мы свяжемся с вами в ближайшее время")
-      this.priceForm.reset();
+      this.appService.sendQuery(this.priceForm.value)
+        .subscribe(
+          {
+            next: (response: any) => {
+              alert(response.message);
+              this.priceForm.reset();
+            },
+            error: (response) => {
+              alert(response.error.message);
+            }
+          }
+        );
     }
 
   }

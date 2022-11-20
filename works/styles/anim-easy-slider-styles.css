@@ -1,6 +1,8 @@
 @font-face {
   font-family: Radiotechnika;
   src: url("../fonts/Radiotechnika.otf") format("opentype");
+}
+@font-face {
   font-family: Enthalpy298;
   src: url("../fonts/Enthalpy298.otf") format("opentype");
 }
@@ -105,6 +107,11 @@ body {
 }
 
 .house-start {
+  margin: 33px 0 0 409px;
+  transform: rotate(-45deg);
+}
+
+.carsharing-start {
   margin: 33px 0 0 409px;
   transform: rotate(-45deg);
 }
@@ -324,9 +331,14 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.background-carsharing {
+  background: linear-gradient(180deg, rgba(15, 15, 15, 0) 10%, rgb(1, 1, 37) 36%, rgb(2, 0, 36) 70%), url("../Pages/cars/preview.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .background-input {
   background: linear-gradient(180deg, rgba(15, 15, 15, 0) 10%, rgb(1, 1, 37) 50%, rgb(2, 0, 36) 70%), url("../Pages/forma/preview.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .background-bagames {
@@ -428,4 +440,16 @@ a {
 .showed {
   opacity: 1;
   display: flex;
+}
+
+@media screen and (max-width: 1160px) {
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .button-decor {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
 }/*# sourceMappingURL=anim-easy-slider-styles.css.map */
