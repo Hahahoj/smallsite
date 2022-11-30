@@ -84,7 +84,19 @@ buttonStartSlaine.onclick = function() {
     window.open("https://hahahoj.github.io/smallsite/works/Pages/slaine/Slainev0.9beta.ru.32bit.zip", "_blank");
 } 
 
-buttonNext.onclick = function() {
+document.addEventListener('keydown', e=>{
+    if (e.key === 'ArrowLeft') {
+        Prev();
+    } else if (e.key === 'ArrowRight') {
+        Next();
+    }
+}
+)
+
+buttonNext.onclick = Next;
+buttonPrev.onclick = Prev;
+
+function Next () {
     //console.log("press");
     let str = pages[i].className;
     pages[i++].className = str.replace(" showed", "");
@@ -100,7 +112,7 @@ buttonNext.onclick = function() {
     pages[i].className += " showed";
 };
 
-buttonPrev.onclick = function() {
+function Prev() {
     let str = pages[i].className;
     pages[i--].className = str.replace(" showed", "");
     if (i < 0) {
